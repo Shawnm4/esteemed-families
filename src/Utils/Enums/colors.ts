@@ -1,5 +1,6 @@
 export const EColors = {
   bgprimary: "#ded0b9",
+  textSecondary: "#343a40",
   blue: "#1890FF",
   orange: "#FA8C16",
   gray_2: "#FAFAFA",

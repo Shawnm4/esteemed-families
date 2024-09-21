@@ -1,6 +1,29 @@
 import { Divider } from "antd";
+import { useNavigate } from "react-router-dom";
+import { ERoute } from "../../Utils/Enums/routes";
 
 export default function ServicesSection() {
+  const navigate = useNavigate();
+
+  const handleIndividualTherapyNavigation = () => {
+    navigate(ERoute.INDIVIDUALTHERAPY);
+  };
+  const handleChildTherapyNavigation = () => {
+    navigate(ERoute.CHILDTHERAPY);
+  };
+  const handleCouplesTherapyNavigation = () => {
+    navigate(ERoute.COUPLESTHERAPY);
+  };
+  const handleNayansapoTherapyNavigation = () => {
+    navigate(ERoute.NYANSAPOTHERAPY);
+  };
+  const handleMaatTherapyNavigation = () => {
+    navigate(ERoute.MAATTHERAPY);
+  };
+  const handleConsulationNavigation = () => {
+    navigate(ERoute.CONSULTATION);
+  };
+
   return (
     <>
       <div className="my-32">
@@ -14,7 +37,10 @@ export default function ServicesSection() {
       >
         <div className="w-10/12 flex justify-center">
           <div className="grid grid-cols-3 grid-rows-2 gap-12  text-center ">
-            <div className="drop-shadow-xl border-2 rounded p-10 cursor-pointer">
+            <div
+              onClick={handleIndividualTherapyNavigation}
+              className="drop-shadow-xl border-2 rounded p-10 cursor-pointer"
+            >
               <div className="flex justify-center">
                 <img
                   style={{ borderRadius: "5%" }}
@@ -45,7 +71,10 @@ export default function ServicesSection() {
                 <strong>personal goals</strong> and needs.
               </div>
             </div>
-            <div className="drop-shadow-xl border-2 rounded p-10 cursor-pointer">
+            <div
+              onClick={handleChildTherapyNavigation}
+              className="drop-shadow-xl border-2 rounded p-10 cursor-pointer"
+            >
               <div className="flex justify-center">
                 <img
                   style={{ borderRadius: "5%" }}
@@ -67,7 +96,10 @@ export default function ServicesSection() {
                 <strong>culturally</strong> sensitive approach.
               </div>
             </div>
-            <div className="drop-shadow-xl border-2 rounded p-10 cursor-pointer">
+            <div
+              onClick={handleCouplesTherapyNavigation}
+              className="drop-shadow-xl border-2 rounded p-10 cursor-pointer"
+            >
               <div className="flex justify-center">
                 <img
                   style={{ borderRadius: "5%" }}
@@ -90,7 +122,10 @@ export default function ServicesSection() {
                 distress.
               </div>
             </div>
-            <div className="drop-shadow-xl border-2 rounded p-10 cursor-pointer">
+            <div
+              onClick={handleNayansapoTherapyNavigation}
+              className="drop-shadow-xl border-2 rounded p-10 cursor-pointer"
+            >
               <div className="flex justify-center">
                 <img
                   style={{ borderRadius: "5%" }}
@@ -113,7 +148,10 @@ export default function ServicesSection() {
                 <strong>community</strong>.
               </div>
             </div>
-            <div className="drop-shadow-xl border-2 rounded p-10 cursor-pointer">
+            <div
+              onClick={handleMaatTherapyNavigation}
+              className="drop-shadow-xl border-2 rounded p-10 cursor-pointer"
+            >
               <div className="flex justify-center">
                 <img
                   style={{ borderRadius: "5%" }}
@@ -136,7 +174,10 @@ export default function ServicesSection() {
                 <strong>personal growth</strong>.
               </div>
             </div>
-            <div className="drop-shadow-xl border-2 rounded p-10 cursor-pointer">
+            <div
+              onClick={handleConsulationNavigation}
+              className="drop-shadow-xl border-2 rounded p-10 cursor-pointer"
+            >
               <div className="flex justify-center">
                 <img
                   style={{ borderRadius: "5%" }}

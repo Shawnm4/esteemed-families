@@ -4,7 +4,12 @@ import { EColors } from "../Utils/Enums/colors";
 export default function TopNavBar() {
   return (
     <nav
-      style={{ backgroundColor: EColors.bgprimary }}
+      style={{
+        backgroundColor: EColors.bgprimary,
+        position: "sticky",
+        top: 0,
+        zIndex: 1000,
+      }}
       className="flex justify-center  h-24"
     >
       <header className="flex  ">
