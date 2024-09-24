@@ -1,7 +1,25 @@
 import ReusableButton from "../Components/Ant/ReusableButton";
 import { EColors } from "../Utils/Enums/colors";
+import { useNavigate } from "react-router-dom";
+import { ERoute } from "../Utils/Enums/routes";
+// import { useEffect } from "react";
+// import { useLocation } from "react-router-dom";
 
 export default function TopNavBar() {
+  const navigate = useNavigate();
+  function navigateHome() {
+    navigate(ERoute.ROOT);
+  }
+  // useEffect(() => {
+  //   if (location.state && location.state.scrollHeight) {
+  //     window.scrollTo({ top: location.state.scrollHeight, behavior: "smooth" });
+  //   }
+  // }, [location]);
+
+  const navigateToAboutDenise = () => {
+    navigate(ERoute.ABOUTDENISE);
+  };
+
   return (
     <nav
       style={{
@@ -12,7 +30,7 @@ export default function TopNavBar() {
       }}
       className="flex justify-center  h-24"
     >
-      <header className="flex  ">
+      <header onClick={navigateHome} className="flex cursor-pointer ">
         <img src="/esteemed-familieslogo.png" />
         <div
           style={{ fontFamily: "Lora" }}
@@ -23,10 +41,14 @@ export default function TopNavBar() {
         </div>
       </header>
       <section className=" w-2/4 flex justify-evenly items-center text-lg ">
-        <div>Welcome</div>
-        <div>About</div>
-        <div>Services</div>
-        <div>Investment</div>
+        <div className=" cursor-pointer" onClick={navigateHome}>
+          Home
+        </div>
+        <div className="cursor-pointer" onClick={navigateToAboutDenise}>
+          About Denise
+        </div>
+        <div className="cursor-pointer">Services</div>
+        <div className="cursor-pointer">Investment</div>
       </section>
       <div className="flex items-center">
         <ReusableButton className="h-10 w-25">Contact Us</ReusableButton>

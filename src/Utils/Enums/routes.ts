@@ -7,4 +7,5 @@ export enum ERoute {
   MAATTHERAPY = "/maattherapy",
   NYANSAPOTHERAPY = "/nyansapotherapy",
   CONSULTATION = "/consultation",
+  ABOUTDENISE = "/aboutdenise",
 }

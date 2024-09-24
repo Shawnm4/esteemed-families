@@ -1,6 +1,15 @@
+import { EColors } from "../../Utils/Enums/colors";
+
 export default function AboutSection() {
+  const logScrollHeight = () => {
+    console.log("Current Scroll Height:", window.scrollY);
+  };
   return (
-    <section style={{ height: "50rem" }} className="flex w-full   ">
+    <section
+      onClick={logScrollHeight}
+      style={{ height: "50rem" }}
+      className="flex w-full   "
+    >
       <div className="flex w-1/2  justify-center items-center mr-10">
         {/* <img src="/Akwaaba-Adinkra.png" /> */}
         <img
@@ -20,7 +29,10 @@ export default function AboutSection() {
           >
             On Your Wellness Journey
           </div>
-          <div className="w-3/4 mb-5">
+          <div
+            style={{ color: EColors.textSecondary }}
+            className="w-3/4 mb-5 text-xl"
+          >
             Esteemed Families, LLC, is an African Centered mental health agency
             designed to meet the therapeutic needs of children, adolescents,
             adults and families. African-centered therapy is a therapeutic
@@ -30,7 +42,10 @@ export default function AboutSection() {
             self-concept, cultural identity, emotional coping skills, and reduce
             depressive symptoms.
           </div>
-          <div className="w-3/4 mb-5">
+          <div
+            style={{ color: EColors.textSecondary }}
+            className="w-3/4 mb-5 text-xl"
+          >
             Esteemed Families, LLC specializes in addressing mental health
             problems, trauma, sexual assault, childhood abuse and neglect,
             marital and relationship problems. If you are feeling lost and
@@ -39,7 +54,10 @@ export default function AboutSection() {
             therapy, there is always a way to address the issues you face and
             learn coping strategies to help you now and in the future.
           </div>
-          <div className="w-3/4 mb-5">
+          <div
+            style={{ color: EColors.textSecondary }}
+            className="w-3/4 mb-5 text-xl"
+          >
             Esteemed Families, LLC can assist you in leading a happier, more
             fulfilling life by equipping you with the tools you need to
             efficiently and confidently manage life’s challenges. In addition to

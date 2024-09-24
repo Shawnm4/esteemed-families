@@ -9,6 +9,7 @@ import MaatTherapy from "../Pages/TherapyServices/MaatTherapy";
 import NyansapoTherapy from "../Pages/TherapyServices/NyansapoTherapy";
 import ChildTherapy from "../Pages/TherapyServices/ChildTherapy";
 import Consultation from "../Pages/TherapyServices/Consultation";
+import AboutDenise from "../Pages/AboutDenise";
 
 export const routes: RouteObject[] = [
   {
@@ -43,6 +44,10 @@ export const routes: RouteObject[] = [
       {
         path: ERoute.CONSULTATION,
         element: <Consultation />,
+      },
+      {
+        path: ERoute.ABOUTDENISE,
+        element: <AboutDenise />,
       },
     ],
   },

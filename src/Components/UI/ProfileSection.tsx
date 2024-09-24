@@ -34,7 +34,10 @@ export default function ProfileSection() {
         <div className="mt-72 flex justify-center w-1/2">
           <div className="text-center">
             <div>
-              <div className="mb-6">
+              <div
+                style={{ color: EColors.textSecondary }}
+                className="mb-6 text-xl"
+              >
                 <b>Denise Montgomery</b> is an African Centered Licensed
                 Clinical Social Worker from Queens, New York. Ms. Montgomery
                 attended Virginia State University and Virginia Commonwealth
@@ -57,7 +60,10 @@ export default function ProfileSection() {
                 over 20 years to make therapy relatable, and practical for each
                 client.
               </div>
-              <div className="text-center mb-6">
+              <div
+                style={{ color: EColors.textSecondary }}
+                className="text-center mb-6 text-xl"
+              >
                 Ms. Montgomery has collaborated with multidisciplinary teams
                 such as Children's National Hospital, the DC Metropolitan Police
                 Department, and various government agencies. Ms. Montgomery has

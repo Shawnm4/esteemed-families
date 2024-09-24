@@ -3,6 +3,7 @@ import AboutSection from "../Components/UI/AboutSection";
 import ProfileSection from "../Components/UI/ProfileSection";
 import ServicesSection from "../Components/UI/ServicesSection";
 import WelcomeSection from "../Components/UI/WelcomeSection";
+import Footer from "../Components/UI/Footer";
 
 export default function HomeScreen() {
   useEffect(() => {
@@ -14,6 +15,7 @@ export default function HomeScreen() {
       <AboutSection />
       <ProfileSection />
       <ServicesSection />
+      <Footer />
     </div>
   );
 }
