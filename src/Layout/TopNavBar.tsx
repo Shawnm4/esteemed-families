@@ -17,6 +17,12 @@ export default function TopNavBar() {
   }
   function navigateToServices() {
     navigate(ERoute.ROOT);
+    setTimeout(() => {
+      window.scrollTo({
+        top: 2600,
+        behavior: "smooth",
+      });
+    }, 100);
   }
   function navigateToContact() {
     navigate(ERoute.CONTACT);
