@@ -1,6 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import { EColors } from "../../Utils/Enums/colors";
 import { ERoute } from "../../Utils/Enums/routes";
+import {
+  EnvironmentOutlined,
+  MailOutlined,
+  PhoneOutlined,
+} from "@ant-design/icons";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -40,7 +45,7 @@ export default function Footer() {
   return (
     <>
       <div
-        style={{ backgroundColor: EColors.bgprimary }}
+        style={{ backgroundColor: EColors.bgprimary, fontFamily: "Inter" }}
         className="mt-32 flex justify-center "
       >
         <div className="w-1/2  ">
@@ -63,8 +68,21 @@ export default function Footer() {
         style={{ backgroundColor: EColors.bgprimary }}
         className="flex justify-center "
       >
-        <div className="w-1/2  flex justify-evenly mt-4 mb-60 ">
+        <div
+          style={{ fontFamily: "Inter" }}
+          className="w-3/4  flex gap-24 justify-evenly mt-4 mb-60 "
+        >
+          <div className="w-1/4">
+            <img src="/esteemed-familieslogo.png" className="w-1/4" />
+            <div className="text-xl font-bold">Esteemed Families LLC</div>
+            <div style={{ fontFamily: "Inter" }}>
+              "Empowering personal growth through tailored therapy and coaching.
+              Unlock your potential with compassionate, expert guidance on your
+              journey to lasting change."
+            </div>
+          </div>
           <ul className="grid grid-cols-1 gap-4 ">
+            <li className="text-xl font-bold">Browse</li>
             <li
               onClick={navigateToHomePage}
               className="underline cursor-pointer"
@@ -73,7 +91,7 @@ export default function Footer() {
             </li>
             <li
               onClick={navigateToAboutDenisePage}
-              className="underline cursor-pointer"
+              className="underline cursor-pointer whitespace-nowrap"
             >
               About Denise
             </li>
@@ -90,8 +108,8 @@ export default function Footer() {
               Investment
             </li>
           </ul>
-          <ul className="grid grid-cols-1 gap-6 ">
-            <li className="text-xl">Services</li>
+          <ul className="grid grid-cols-1 gap-3 ">
+            <li className="text-xl font-bold mb-4">Services</li>
             <li
               onClick={navigateToIndividualTherapyPage}
               className="underline cursor-pointer"
@@ -127,6 +145,37 @@ export default function Footer() {
               className="underline cursor-pointer"
             >
               Consultation and Supervision Circle
+            </li>
+          </ul>
+          <ul className="grid grid-cols-1 gap-4 ">
+            <li className="text-xl font-bold">Contact</li>
+            <li
+              onClick={navigateToHomePage}
+              className="underline cursor-pointer"
+            >
+              <div className="flex gap-2">
+                <PhoneOutlined />
+                <div>202-423-0040</div>
+              </div>
+            </li>
+            <li className="underline cursor-pointer">
+              <div className="flex gap-2">
+                <EnvironmentOutlined />
+                <div className="whitespace-nowrap">
+                  <a
+                    href="https://maps.app.goo.gl/AYb1SDvhW4zzV57S7"
+                    target="_blank"
+                  >
+                    4329 Northview Drive Bowie, Maryland 20716
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li className="underline cursor-pointer">
+              <div className="flex gap-2">
+                <MailOutlined />
+                <div>Denise@esteemedfamilies.com</div>
+              </div>
             </li>
           </ul>
         </div>
