@@ -2,14 +2,6 @@ import ReusableButton from "../Ant/ReusableButton";
 import "./WelcomeSection.css";
 
 export default function WelcomeSection() {
-  //   const sectionStyle = {
-  //     backgroundImage: "url(/family-background1.jpg)",
-  //     backgroundSize: "cover",
-  //     backgroundPosition: "center",
-  //     height: "100vh",
-  //     width: "100%",
-  //   };
-
   return (
     <section className="background-section  ">
       <div className="flex justify-center h-3/4 content">

@@ -1,0 +1,39 @@
+.background-section3 {
+  position: relative;
+  background-image: url("/dcbg1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+  width: 100%;
+}
+
+.background-section3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Adjust the opacity as needed */
+}
+
+.content3 {
+  position: relative;
+  z-index: 1;
+  color: white; /* Ensure the text color contrasts with the background */
+  text-align: center;
+  padding: 20px;
+}
+.relative-container2 {
+  position: relative;
+}
+
+.overlay-image2 {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, 40%); /* Center the image */
+  z-index: 2; /* Ensure the image is above the sections */
+  width: 150px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}

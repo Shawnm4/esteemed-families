@@ -7,18 +7,23 @@ import { ERoute } from "../Utils/Enums/routes";
 
 export default function TopNavBar() {
   const navigate = useNavigate();
+
+  // NAVIGATION ROUTES
   function navigateHome() {
     navigate(ERoute.ROOT);
   }
-  // useEffect(() => {
-  //   if (location.state && location.state.scrollHeight) {
-  //     window.scrollTo({ top: location.state.scrollHeight, behavior: "smooth" });
-  //   }
-  // }, [location]);
-
-  const navigateToAboutDenise = () => {
+  function navigateToAboutDenise() {
     navigate(ERoute.ABOUTDENISE);
-  };
+  }
+  function navigateToServices() {
+    navigate(ERoute.ROOT);
+  }
+  function navigateToContact() {
+    navigate(ERoute.CONTACT);
+  }
+  function navigateToInvestmentPage() {
+    navigate(ERoute.INVESTMENT);
+  }
 
   return (
     <nav
@@ -47,11 +52,15 @@ export default function TopNavBar() {
         <div className="cursor-pointer" onClick={navigateToAboutDenise}>
           About Denise
         </div>
-        <div className="cursor-pointer">Services</div>
-        <div className="cursor-pointer">Investment</div>
+        <div onClick={navigateToServices} className="cursor-pointer">
+          Services
+        </div>
+        <div onClick={navigateToInvestmentPage} className="cursor-pointer">
+          Investment
+        </div>
       </section>
-      <div className="flex items-center">
-        <ReusableButton className="h-10 w-25">Contact Us</ReusableButton>
+      <div onClick={navigateToContact} className="flex items-center">
+        <ReusableButton className="h-10 w-25">Contact</ReusableButton>
       </div>
     </nav>
   );

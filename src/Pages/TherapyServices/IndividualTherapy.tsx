@@ -4,7 +4,7 @@ import ProfileFooter from "../../Components/UI/ProfileFooter";
 import Footer from "../../Components/UI/Footer";
 import { useEffect } from "react";
 
-export default function IndividualTherapy() {
+export default function IndividualTherapyPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

@@ -4,7 +4,7 @@ import ProfileFooter from "../../Components/UI/ProfileFooter";
 import { EColors } from "../../Utils/Enums/colors";
 import { useEffect } from "react";
 
-export default function CouplesTherapy() {
+export default function CouplesTherapyPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

@@ -4,7 +4,7 @@ import ProfileFooter from "../../Components/UI/ProfileFooter";
 import Footer from "../../Components/UI/Footer";
 import { useEffect } from "react";
 
-export default function Consultation() {
+export default function ConsultationPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

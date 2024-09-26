@@ -13,8 +13,8 @@ export default function AboutSection() {
       <div className="flex w-1/2  justify-center items-center mr-10">
         {/* <img src="/Akwaaba-Adinkra.png" /> */}
         <img
-          src="/serenepic.jpg "
-          className="w-1/2 drop-shadow-lg"
+          src="/serenepic.jpg"
+          className="w-3/4 drop-shadow-lg"
           style={{ borderRadius: "5%" }}
         />
         {/* <div className="text-center">"Akwaaba"</div>

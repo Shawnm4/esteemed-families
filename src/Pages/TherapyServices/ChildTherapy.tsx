@@ -4,7 +4,7 @@ import ProfileFooter from "../../Components/UI/ProfileFooter";
 import { EColors } from "../../Utils/Enums/colors";
 import { Divider } from "antd";
 
-export default function ChildTherapy() {
+export default function ChildTherapyPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

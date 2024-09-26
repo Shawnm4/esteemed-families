@@ -2,96 +2,111 @@ import { Divider } from "antd";
 import { EColors } from "../Utils/Enums/colors";
 import ProfileFooter from "../Components/UI/ProfileFooter";
 import Footer from "../Components/UI/Footer";
+import "./AboutDenise.css";
+import { useEffect } from "react";
 
-export default function AboutDenise() {
+export default function AboutDenisePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <>
-      <section className="flex justify-center  mt-24 w-full  ">
-        <div className="w-1/2  text-center">
-          <div className="">
+    <div className="relative-container2">
+      <div className="background-section3">
+        <div className="content3">
+          <div className=" w-full flex justify-center overlay-image2 ">
             <div
-              style={{ fontFamily: "Lora" }}
-              className="  text-4xl font-semibold mb-10"
+              style={{ borderRadius: "2%", backgroundColor: EColors.bgprimary }}
+              className=" w-1/2 p-10   "
             >
-              <div>Hi, Im Denise,</div>
-              <div> a Maryland and D.C. Therapist</div>
-            </div>
-            <div className="text-center">
               <div
-                style={{ color: EColors.textSecondary }}
-                className="text-xl mb-5 "
+                style={{ fontFamily: "Lora", color: "black" }}
+                className="font-semibold text-4xl mb-5"
               >
-                As a Licensed Clinical Social Worker and Personal Development
-                Coach with over 20 years of experience, I’m here to guide you
-                toward lasting, meaningful change. My approach is centered on
-                working with you at the deepest level to address the root of
-                your challenges, helping you achieve your goals in the most
-                effective way possible.
+                <div>Hi, Im Denise,</div>
+                <div>a Maryland and D.C. Therapist</div>
               </div>
-            </div>
-            <div className="text-center">
-              <div
-                style={{ color: EColors.textSecondary }}
-                className=" text-xl mb-5"
-              >
-                I genuinely care about your well-being and am passionate about
-                helping you live the life you deserve. I believe in creating a
-                safe, supportive space where you feel heard, understood, and
-                empowered to move forward. I am deeply committed to my own
-                growth, so I can continue providing the highest level of care
-                and expertise to every client.
+              <div className="text-center">
+                <div
+                  style={{ color: EColors.textSecondary }}
+                  className="text-xl mb-5 "
+                >
+                  As a Licensed Clinical Social Worker and Personal Development
+                  Coach with over 20 years of experience, I’m here to guide you
+                  toward lasting, meaningful change. My approach is centered on
+                  working with you at the deepest level to address the root of
+                  your challenges, helping you achieve your goals in the most
+                  effective way possible.
+                </div>
               </div>
-            </div>
-            <div className="text-center mb-32">
-              <div
-                style={{ color: EColors.textSecondary }}
-                className=" text-xl"
-              >
-                If you’re ready to make a change, I’d love to support you on
-                your journey. Let’s work together to unlock the best version of
-                yourself.
+              <div className="text-center">
+                <div
+                  style={{ color: EColors.textSecondary }}
+                  className=" text-xl mb-5"
+                >
+                  I genuinely care about your well-being and am passionate about
+                  helping you live the life you deserve. I believe in creating a
+                  safe, supportive space where you feel heard, understood, and
+                  empowered to move forward. I am deeply committed to my own
+                  growth, so I can continue providing the highest level of care
+                  and expertise to every client.
+                </div>
+              </div>
+              <div className="text-center ">
+                <div
+                  style={{ color: EColors.textSecondary }}
+                  className=" text-xl"
+                >
+                  If you’re ready to make a change, I’d love to support you on
+                  your journey. Let’s work together to unlock the best version
+                  of yourself.
+                </div>
               </div>
             </div>
           </div>
-          <Divider></Divider>
+        </div>
+      </div>
+      <section className="flex justify-center mt-24   ">
+        <div className=" w-3/4 text-center">
           <div
             style={{ fontFamily: "Lora" }}
-            className="mb-10 text-4xl font-semibold "
+            className="mb-20 mt-12 text-4xl font-semibold "
           >
             My Credentials
           </div>
-          <div className="grid gap-8 grid-cols-5 grid-rows-2 mb-32">
-            <div>
-              <img src="/catp.png" />
-            </div>
-            <div>
-              <img src="/ccatp.png" />
-            </div>
-            <div>
-              <img src="adhd.png" />
-            </div>
-            <div>
-              <img src="clinical-trauma professional2.png" />
-            </div>
-            <div>
-              <img src="cdbt.png" />
-            </div>
-            <div>
-              <img src="absw.png" />
-            </div>
-            <div>
-              <img src="play-therapy.png" />
-            </div>
-            <div>
-              <img src="psy.png" />
-            </div>
-            <div>
-              <img src="clinicalfellow.png" />
+          <div className="flex justify-center">
+            <div className="grid gap-8 grid-cols-5 grid-rows-2 mb-32 w-1/2">
+              <div>
+                <img src="/catp.png" />
+              </div>
+              <div>
+                <img src="/ccatp.png" />
+              </div>
+              <div>
+                <img src="adhd.png" />
+              </div>
+              <div>
+                <img src="clinical-trauma professional2.png" />
+              </div>
+              <div>
+                <img src="cdbt.png" />
+              </div>
+              <div>
+                <img src="absw.png" />
+              </div>
+              <div>
+                <img src="play-therapy.png" />
+              </div>
+              <div>
+                <img src="psy.png" />
+              </div>
+              <div>
+                <img src="clinicalfellow.png" />
+              </div>
             </div>
           </div>
-          <Divider></Divider>
         </div>
       </section>
+      <Divider></Divider>
       <div className=" flex justify-evenly mt-10  w-full  ">
         <div className="w-4/12 drop-shadow-lg">
           <img style={{ borderRadius: "5%" }} src="about-denise-pic.jpg " />
@@ -131,6 +146,6 @@ export default function AboutDenise() {
       <Divider></Divider>
       <ProfileFooter />
       <Footer />
-    </>
+    </div>
   );
 }

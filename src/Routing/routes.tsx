@@ -3,13 +3,16 @@ import { ERoute } from "../Utils/Enums/routes";
 
 import Layout from "../Layout/Layout";
 import HomeScreen from "../Pages/HomeScreen";
-import IndividualTherapy from "../Pages/TherapyServices/IndividualTherapy";
-import CouplesTherapy from "../Pages/TherapyServices/CouplesTherapy";
-import MaatTherapy from "../Pages/TherapyServices/MaatTherapy";
-import NyansapoTherapy from "../Pages/TherapyServices/NyansapoTherapy";
-import ChildTherapy from "../Pages/TherapyServices/ChildTherapy";
-import Consultation from "../Pages/TherapyServices/Consultation";
-import AboutDenise from "../Pages/AboutDenise";
+
+import InvestmentPage from "../Pages/Investment";
+import ContactPage from "../Pages/ContactPage";
+import AboutDenisePage from "../Pages/AboutDenise";
+import ConsultationPage from "../Pages/TherapyServices/Consultation";
+import NyansapoTherapyPage from "../Pages/TherapyServices/NyansapoTherapy";
+import MaatTherapyPage from "../Pages/TherapyServices/MaatTherapy";
+import CouplesTherapyPage from "../Pages/TherapyServices/CouplesTherapy";
+import ChildTherapyPage from "../Pages/TherapyServices/ChildTherapy";
+import IndividualTherapyPage from "../Pages/TherapyServices/IndividualTherapy";
 
 export const routes: RouteObject[] = [
   {
@@ -22,32 +25,40 @@ export const routes: RouteObject[] = [
       },
       {
         path: ERoute.INDIVIDUALTHERAPY,
-        element: <IndividualTherapy />,
+        element: <IndividualTherapyPage />,
       },
       {
         path: ERoute.CHILDTHERAPY,
-        element: <ChildTherapy />,
+        element: <ChildTherapyPage />,
       },
 
       {
         path: ERoute.COUPLESTHERAPY,
-        element: <CouplesTherapy />,
+        element: <CouplesTherapyPage />,
       },
       {
         path: ERoute.MAATTHERAPY,
-        element: <MaatTherapy />,
+        element: <MaatTherapyPage />,
       },
       {
         path: ERoute.NYANSAPOTHERAPY,
-        element: <NyansapoTherapy />,
+        element: <NyansapoTherapyPage />,
       },
       {
         path: ERoute.CONSULTATION,
-        element: <Consultation />,
+        element: <ConsultationPage />,
       },
       {
         path: ERoute.ABOUTDENISE,
-        element: <AboutDenise />,
+        element: <AboutDenisePage />,
+      },
+      {
+        path: ERoute.CONTACT,
+        element: <ContactPage />,
+      },
+      {
+        path: ERoute.INVESTMENT,
+        element: <InvestmentPage />,
       },
     ],
   },

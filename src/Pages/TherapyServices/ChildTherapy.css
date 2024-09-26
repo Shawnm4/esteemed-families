@@ -1,0 +1,26 @@
+.background-section2 {
+  position: relative;
+  background-image: url("/test-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 4rem;
+  width: 100%;
+}
+
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Adjust the opacity as needed */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white; /* Ensure the text color contrasts with the background */
+  text-align: center;
+  padding: 20px;
+}

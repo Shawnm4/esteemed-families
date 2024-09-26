@@ -4,7 +4,7 @@ import Footer from "../../Components/UI/Footer";
 import { EColors } from "../../Utils/Enums/colors";
 import { useEffect } from "react";
 
-export default function NyansapoTherapy() {
+export default function NyansapoTherapyPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
