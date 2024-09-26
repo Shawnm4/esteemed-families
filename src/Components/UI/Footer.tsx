@@ -182,7 +182,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="2xl:hidden">
         <div
           style={{ backgroundColor: EColors.bgprimary, fontFamily: "Inter" }}
           className="mt-12 flex justify-center "
@@ -191,7 +191,7 @@ export default function Footer() {
             <div className="text-center mt-14 mb-4 text-xl font-semibold">
               Denise Montgomery
             </div>
-            <div className="text-xs text-center mb-4">
+            <div className="text-sm text-center mb-4">
               Email: <strong>Denise@esteemedfamilies.com</strong>{" "}
             </div>
             <div className="flex justify-center text-center">
@@ -212,7 +212,7 @@ export default function Footer() {
                     Consultation and Supervision Circles
                   </li>
                 </ul>
-                <ul className="text-xs grid grid-cols-1 grid-rows-auto gap-4 ">
+                <ul className="text-sm grid grid-cols-1 grid-rows-auto gap-4 ">
                   <li className="flex gap-2">
                     <PhoneOutlined />
                     <div className="underline">202-423-0040</div>
