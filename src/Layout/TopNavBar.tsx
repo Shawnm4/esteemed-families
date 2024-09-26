@@ -39,7 +39,7 @@ export default function TopNavBar() {
         top: 0,
         zIndex: 1000,
       }}
-      className="flex justify-center  h-24"
+      className="hidden 2xl:flex justify-center h-24 "
     >
       <header onClick={navigateHome} className="flex cursor-pointer ">
         <img src="/esteemed-familieslogo.png" />
