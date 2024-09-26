@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { EColors } from "../../Utils/Enums/colors";
 import { Drawer } from "antd";
-import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
-import ReusableButton from "../Ant/ReusableButton";
+import { MenuOutlined } from "@ant-design/icons";
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
