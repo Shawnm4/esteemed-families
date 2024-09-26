@@ -32,7 +32,7 @@ export default function ServicesSection() {
         </Divider>
       </div>
       <div
-        style={{}}
+        style={{ fontFamily: "Inter" }}
         className=" w-full h-full flex  justify-center  items-center"
       >
         <div className="w-10/12 flex justify-center">

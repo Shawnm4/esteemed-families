@@ -51,7 +51,10 @@ export default function TopNavBar() {
           <div>Families</div>
         </div>
       </header>
-      <section className=" w-2/4 flex justify-evenly items-center text-lg ">
+      <section
+        style={{ fontFamily: "Inter" }}
+        className=" w-2/4 flex justify-evenly items-center text-lg "
+      >
         <div className=" cursor-pointer" onClick={navigateHome}>
           Home
         </div>
@@ -65,7 +68,11 @@ export default function TopNavBar() {
           Investment
         </div>
       </section>
-      <div onClick={navigateToContact} className="flex items-center">
+      <div
+        style={{ fontFamily: "Inter" }}
+        onClick={navigateToContact}
+        className="flex items-center"
+      >
         <ReusableButton className="h-10 w-25">Contact</ReusableButton>
       </div>
     </nav>

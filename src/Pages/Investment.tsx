@@ -10,7 +10,10 @@ export default function InvestmentPage() {
   }, []);
   return (
     <>
-      <div className="flex mt-28  justify-center">
+      <div
+        style={{ fontFamily: "Inter" }}
+        className="flex mt-28  justify-center"
+      >
         <div className="">
           <h1
             style={{ fontFamily: "Lora" }}
@@ -37,7 +40,7 @@ export default function InvestmentPage() {
 
           <Divider></Divider>
           <div
-            style={{ color: EColors.textSecondary }}
+            style={{ color: EColors.textSecondary, fontFamily: "Inter" }}
             className="w-full flex justify-center mb-24 text-xl"
           >
             <div className="w-1/2">
@@ -78,7 +81,7 @@ export default function InvestmentPage() {
           <Divider></Divider>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div style={{ fontFamily: "Inter" }} className="flex justify-center">
         <div>
           <div className="mb-5">
             <div

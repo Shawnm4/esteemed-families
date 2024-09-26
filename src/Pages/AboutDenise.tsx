@@ -10,7 +10,7 @@ export default function AboutDenisePage() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="relative-container2">
+    <div style={{ fontFamily: "Inter" }} className="relative-container2">
       <div className="background-section3">
         <div className="content3">
           <div className=" w-full flex justify-center overlay-image2 ">

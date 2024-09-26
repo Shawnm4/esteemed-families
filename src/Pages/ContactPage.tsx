@@ -16,7 +16,14 @@ export default function ContactPage() {
   return (
     <>
       <section className="background-section4 mb-28  "></section>
-      <div style={{ display: "flex", flexDirection: "column" }} className="">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          fontFamily: "Inter",
+        }}
+        className=""
+      >
         <h1
           style={{ fontFamily: "Lora" }}
           className="text-5xl font-semibold mb-8 text-center"

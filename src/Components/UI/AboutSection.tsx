@@ -22,7 +22,12 @@ export default function AboutSection() {
       </div>
       <div className="flex items-center w-1/2  ">
         <div>
-          <div className="text-4xl font-semibold">TAKE THE FIRST STEPS</div>
+          <div
+            style={{ fontFamily: "Inter" }}
+            className="text-4xl font-semibold"
+          >
+            TAKE THE FIRST STEPS
+          </div>
           <div
             style={{ fontFamily: "Lora" }}
             className="text-4xl font-semibold mb-5"
@@ -30,7 +35,7 @@ export default function AboutSection() {
             On Your Wellness Journey
           </div>
           <div
-            style={{ color: EColors.textSecondary }}
+            style={{ color: EColors.textSecondary, fontFamily: "Inter" }}
             className="w-3/4 mb-5 text-xl"
           >
             Esteemed Families, LLC, is an African Centered mental health agency
@@ -43,7 +48,7 @@ export default function AboutSection() {
             depressive symptoms.
           </div>
           <div
-            style={{ color: EColors.textSecondary }}
+            style={{ color: EColors.textSecondary, fontFamily: "Inter" }}
             className="w-3/4 mb-5 text-xl"
           >
             Esteemed Families, LLC specializes in addressing mental health
@@ -55,7 +60,7 @@ export default function AboutSection() {
             learn coping strategies to help you now and in the future.
           </div>
           <div
-            style={{ color: EColors.textSecondary }}
+            style={{ color: EColors.textSecondary, fontFamily: "Inter" }}
             className="w-3/4 mb-5 text-xl"
           >
             Esteemed Families, LLC can assist you in leading a happier, more

@@ -35,7 +35,7 @@ export default function ProfileSection() {
           <div className="text-center">
             <div>
               <div
-                style={{ color: EColors.textSecondary }}
+                style={{ color: EColors.textSecondary, fontFamily: "Inter" }}
                 className="mb-6 text-xl"
               >
                 <b>Denise Montgomery</b> is an African Centered Licensed
@@ -61,7 +61,7 @@ export default function ProfileSection() {
                 client.
               </div>
               <div
-                style={{ color: EColors.textSecondary }}
+                style={{ color: EColors.textSecondary, fontFamily: "Inter" }}
                 className="text-center mb-6 text-xl"
               >
                 Ms. Montgomery has collaborated with multidisciplinary teams
@@ -73,7 +73,7 @@ export default function ProfileSection() {
                 University of Maryland, Montgomery College, Walden University,
                 and Howard University.
               </div>
-              <div>
+              <div style={{ fontFamily: "Inter" }}>
                 <ReusableButton style={{ backgroundColor: EColors.bgprimary }}>
                   More About Denise
                 </ReusableButton>

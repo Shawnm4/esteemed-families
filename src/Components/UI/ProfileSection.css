@@ -33,7 +33,7 @@
   position: absolute;
   top: 50%; /* Adjust as needed */
   left: 50%; /* Adjust as needed */
-  transform: translate(-50%, -110%); /* Center the image */
+  transform: translate(-50%, -115%); /* Center the image */
   z-index: 2; /* Ensure the image is above the sections */
   width: 150px; /* Adjust the size as needed */
   height: auto; /* Maintain aspect ratio */
