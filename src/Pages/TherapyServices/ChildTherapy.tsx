@@ -10,7 +10,7 @@ export default function ChildTherapyPage() {
   }, []);
   return (
     <>
-      <div className="flex mt-28  justify-center">
+      <div className="hidden 2xl:flex mt-28  justify-center">
         <div className="">
           <h1
             style={{ fontFamily: "Lora" }}
@@ -79,6 +79,68 @@ export default function ChildTherapyPage() {
             </div>
           </div>
           <Divider></Divider>
+        </div>
+      </div>
+      <div className="2xl:hidden flex justify-center">
+        <div className="w-3/4">
+          <div
+            style={{ fontFamily: "Lora" }}
+            className="mt-20 font-bold text-2xl text-center"
+          >
+            Child and Adolescent Therapy
+          </div>
+          <div
+            style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+            className="text-center"
+          >
+            Child therapy helps children develop emotional resilience and coping
+            skills in a supportive environment.
+          </div>
+          <Divider></Divider>
+          <div
+            style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+            className=""
+          >
+            <div className="mb-4">
+              Child therapy provides a safe and nurturing environment where
+              children can express their feelings, work through challenges, and
+              develop healthy coping strategies. Through play, talk, and
+              creative activities, I help children process emotions, build
+              confidence, and improve communication skills. Whether dealing with
+              anxiety, behavior issues, or life changes, child therapy empowers
+              children to better understand and manage their emotions, fostering
+              emotional resilience and well-being.
+            </div>
+            <div className="mb-4">
+              Child therapy helps uncover the underlying issues affecting your
+              child's well-being. Together, we take a gentle and collaborative
+              approach to help your child understand and manage their emotions,
+              so the things that once caused distress no longer have the same
+              impact.
+            </div>
+            <div>
+              You'll gain more control and be able to respond with calmness.
+            </div>
+            <Divider></Divider>
+            <div>
+              <img
+                className=" drop-shadow-lg mb-4"
+                style={{ borderRadius: "5%" }}
+                src="/therapy-with-child.jpg"
+              />
+              <div>
+                Your childhood plays a powerful role in shaping the person you
+                become. Early experiences, whether positive or challenging,
+                influence how you see the world, form relationships, and handle
+                life’s ups and downs. In therapy, we gently explore how these
+                experiences have shaped you, helping to heal old wounds and
+                build healthier patterns for the future. By understanding the
+                impact of your past, we can work together to create a more
+                balanced and fulfilling life moving forward. You don’t have to
+                navigate it alone—healing and growth are always possible.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <ProfileFooter />

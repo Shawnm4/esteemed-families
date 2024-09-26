@@ -11,7 +11,7 @@ export default function MaatTherapyPage() {
 
   return (
     <>
-      <div className="flex mt-28  justify-center">
+      <div className="hidden 2xl:flex mt-28  justify-center">
         <div className="">
           <h1
             style={{ fontFamily: "Lora" }}
@@ -79,6 +79,66 @@ export default function MaatTherapyPage() {
             </div>
           </div>
           <Divider></Divider>
+        </div>
+      </div>
+      <div className="2xl:hidden flex justify-center">
+        <div className="w-3/4">
+          <div
+            style={{ fontFamily: "Lora" }}
+            className="mt-20 font-bold text-2xl text-center"
+          >
+            Ma'at Healing Circles
+          </div>
+          <div
+            style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+            className="text-center"
+          >
+            Ma'at healing circles promote balance and emotional healing in a
+            supportive, community-driven space.
+          </div>
+          <Divider></Divider>
+          <div
+            style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+            className="text-center"
+          >
+            <div className="mb-4">
+              These circles provide a safe and supportive environment where
+              individuals can share their thoughts and feelings freely without
+              fear of judgement. Participants can expect to engage in active
+              listening, empathy, and honest communication during these
+              sessions. The goal of Ma’at Learning Circles is to promote
+              healing, understanding, and personal growth through open and
+              respectful dialogue. Whether you are seeking to process personal
+              challenges, learn from others, or simply connect with like-minded
+              individuals, Ma’at Learning Circles offer a space where everyone
+              is welcome and valued. Joining a Ma’at Learning Circle can be a
+              transformative experience that empowers individuals to develop
+              deeper connections with others and with themselves.
+            </div>
+
+            <Divider></Divider>
+
+            <div>
+              <img
+                style={{ borderRadius: "5%" }}
+                src="/maat-circle.jpg"
+                className="2 drop-shadow-lg my-8"
+              />
+              <div>
+                Nyansapo healing circles offer a powerful space for collective
+                wisdom and emotional healing. Rooted in the symbolism of the
+                "Wisdom Knot," these circles encourage participants to tap into
+                their inner intelligence, patience, and ingenuity. By sharing
+                experiences and drawing on the collective knowledge of the
+                group, individuals can gain clarity on personal challenges and
+                discover new paths forward. Nyansapo healing circles foster a
+                sense of community, support, and empowerment, helping
+                participants to cultivate a deeper understanding of themselves
+                and others while promoting mental, emotional, and spiritual
+                growth.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <ProfileFooter />

@@ -10,7 +10,7 @@ export default function IndividualTherapyPage() {
   }, []);
   return (
     <>
-      <div className="flex mt-28  justify-center">
+      <div className="hidden 2xl:flex mt-28  justify-center">
         <div className="">
           <h1
             style={{ fontFamily: "Lora" }}
@@ -114,6 +114,62 @@ export default function IndividualTherapyPage() {
                 <li>&bull; Dialectical Behavioral Therapy(DBT)</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="2xl:hidden flex justify-center">
+        <div className="w-3/4">
+          <div
+            style={{ fontFamily: "Lora" }}
+            className="mt-20 font-bold text-2xl text-center"
+          >
+            Individual Therapy
+          </div>
+          <div
+            style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+            className="text-center"
+          >
+            Individual therapy offers personal growth, support, and coping
+            skills.
+          </div>
+          <Divider></Divider>
+          <div
+            style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+            className=""
+          >
+            <div className="mb-4">
+              I offer individual therapy in the Maryland and D.C. area, helping
+              people work through personal challenges like anxiety, stress,
+              addiction, or relationship issues. Together, we can improve your
+              well-being and support you in living a happier, more fulfilling
+              life.
+            </div>
+            <div className="mb-4">
+              Everyone can benefit from therapy at some point in their lives. If
+              your challenges are preventing you from living the life you want,
+              it’s time to seek support.
+            </div>
+            <div className="mb-4">
+              Individual therapy helps uncover the root causes of your problems.
+              Together, we take a thorough and collaborative approach to shift
+              your thinking, so the things that once made you anxious no longer
+              have the same effect.
+            </div>
+            <div>
+              You'll gain more control and be able to respond with calmness.
+            </div>
+            <Divider></Divider>
+            <div className="font-bold text-center my-6">Types of Therapy</div>
+            <ul className="grid grid-cols-1 gap-2">
+              <li>&bull;African Centered Therapy</li>
+              <li>&bull; Brainspotting</li>
+              <li>&bull; Cognitive Behavioral Therapy (CBT)</li>
+              <li>&bull; Dialectical Behavioral Therapy(DBT)</li>
+              <li>&bull; Internal Family Systems Therapy</li>
+              <li>&bull; (IFS)</li>
+              <li>&bull; Play Therapy</li>
+              <li>&bull; Somatic Experiencing (SE) Trauma Informed Therapy</li>
+            </ul>
           </div>
         </div>
       </div>
