@@ -1,4 +1,3 @@
-import ReusableButton from "../Ant/ReusableButton";
 import MobileWelcome from "../Mobile/MobileWelcome";
 import "./WelcomeSection.css";
 
@@ -20,9 +19,6 @@ export default function WelcomeSection() {
               </div>
               <div className="text-2xl mb-10 drop-shadow-lg">
                 "Building a better me..."
-              </div>
-              <div className="mt-5">
-                <ReusableButton>Learn More</ReusableButton>
               </div>
             </div>
           </div>

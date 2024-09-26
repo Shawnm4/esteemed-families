@@ -26,6 +26,9 @@ export default function MobileAboutSection() {
   const handleConsulationNavigation = () => {
     navigate(ERoute.CONSULTATION);
   };
+  const handleNavigateToAboutDenise = () => {
+    navigate(ERoute.ABOUTDENISE);
+  };
   return (
     <div className="2xl:hidden  mt-10">
       <div className="flex justify-center">
@@ -94,7 +97,12 @@ export default function MobileAboutSection() {
             </div>
             <div className="flex justify-center">
               <ReusableButton className="flex gap-2 mb-4">
-                <div className="underline">About me</div>
+                <div
+                  onClick={handleNavigateToAboutDenise}
+                  className="underline"
+                >
+                  About me
+                </div>
                 <RightOutlined />
               </ReusableButton>
             </div>

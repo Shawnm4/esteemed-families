@@ -1,4 +1,3 @@
-import ReusableButton from "../Ant/ReusableButton";
 import "./MobileWelcome.css";
 export default function MobileWelcome() {
   return (
@@ -12,9 +11,6 @@ export default function MobileWelcome() {
             </div>
             <div style={{ fontFamily: "Inter" }} className=" drop-shadow-lg">
               "Building a better me..."
-            </div>
-            <div style={{ fontFamily: "Inter" }} className="mt-5">
-              <ReusableButton>Learn More</ReusableButton>
             </div>
           </div>
         </div>

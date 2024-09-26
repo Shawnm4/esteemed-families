@@ -12,7 +12,7 @@ export default function InvestmentPage() {
     <>
       <div
         style={{ fontFamily: "Inter" }}
-        className="flex mt-28  justify-center"
+        className="hidden 2xl:flex mt-28  justify-center"
       >
         <div className="">
           <h1
@@ -81,8 +81,11 @@ export default function InvestmentPage() {
           <Divider></Divider>
         </div>
       </div>
-      <div style={{ fontFamily: "Inter" }} className="flex justify-center">
-        <div>
+      <div
+        style={{ fontFamily: "Inter" }}
+        className="hiddedn 2xl:flex justify-center "
+      >
+        <div className="hidden 2xl:inline-block">
           <div className="mb-5">
             <div
               className="text-3xl font-bold"
@@ -127,6 +130,116 @@ export default function InvestmentPage() {
               Please contact me for any additional questions you may have. I
               look forward to hearing from you!
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="2xl:hidden flex justify-center">
+        <div className="w-3/4">
+          <div
+            style={{ fontFamily: "Lora" }}
+            className="mt-20 mb-4 font-bold text-2xl text-center"
+          >
+            Investment (Fee for Service) & Approved Insurances
+          </div>
+          <div
+            style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+            className="text-center mb-4"
+          >
+            Esteemed Families, LLC accepts the following insurances
+          </div>
+          <div className="flex justify-center">
+            <ul
+              style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+              className="grid grid-cols-1 gap-2"
+            >
+              <li>&bull;Blue Cross / Blue Shield</li>
+              <li>&bull; Evernorth (formerly Cigna)</li>
+              <li>&bull; Maryland Medicaid</li>
+            </ul>
+          </div>
+          <Divider></Divider>
+          <div
+            style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+            className=""
+          >
+            <div className="mb-4">
+              Depending on your current health insurance provider or employee
+              benefit plan, it is possible for services to be covered in full or
+              in part. Please contact your provider to verify how your plan
+              compensates you for psychotherapy services. I’d recommend asking
+              these questions to your insurance provider to help determine your
+              benefits:
+            </div>
+            <div className="flex justify-center">
+              <ul
+                style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+                className="grid grid-cols-1 gap-2"
+              >
+                <li>
+                  &bull; Does my health insurance plan include mental health
+                  benefits?
+                </li>
+                <li>
+                  &bull; Do I have a deductible? If so, what is it and have I
+                  met it yet?
+                </li>
+                <li>
+                  &bull; Does my plan limit how many sessions per calendar year
+                  I can have? If so, what is the limit?
+                </li>
+                <li>
+                  &bull;Do I need written approval from my primary care
+                  physician in order for services to be covered?
+                </li>
+              </ul>
+            </div>
+            <Divider></Divider>
+            <div className="mb-5">
+              <div
+                className="text-xl font-bold"
+                style={{ color: EColors.textSecondary }}
+              >
+                Payment
+              </div>
+              <div
+                className=""
+                style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+              >
+                We accept cash and all major credit cards as forms of payment.
+              </div>
+            </div>
+            <div className="mb-5">
+              <div
+                className="text-xl font-bold"
+                style={{ color: EColors.textSecondary }}
+              >
+                Cancellation Policy
+              </div>
+              <div
+                className=""
+                style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+              >
+                If you are unable to attend a session, please make sure you
+                cancel at least 24 hours beforehand. Otherwise, you will be
+                charged for the full rate of the session.
+              </div>
+            </div>
+            <div>
+              <div
+                className="text-xl font-bold"
+                style={{ color: EColors.textSecondary }}
+              >
+                Any Other Questions
+              </div>
+              <div
+                className=""
+                style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+              >
+                Please contact me for any additional questions you may have. I
+                look forward to hearing from you!
+              </div>
+            </div>
+            <Divider></Divider>
           </div>
         </div>
       </div>

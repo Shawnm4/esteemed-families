@@ -197,25 +197,57 @@ export default function Footer() {
             <div className="flex justify-center text-center">
               <div className="grid grid-cols-1 grid-rows-auto gap-10">
                 <ul className="grid grid-cols-1 grid-rows-auto gap-4">
-                  <li className="underline">Home</li>
-                  <li className="underline">About Denise</li>
-                  <li className="underline">Contact</li>
-                  <li className="underline">Investment</li>
+                  <li onClick={navigateToHomePage} className="underline">
+                    Home
+                  </li>
+                  <li onClick={navigateToAboutDenisePage} className="underline">
+                    About Denise
+                  </li>
+                  <li onClick={navigateToContactPage} className="underline">
+                    Contact
+                  </li>
+                  <li onClick={navigateToInvestmentPage} className="underline">
+                    Investment
+                  </li>
                 </ul>
                 <ul className="grid grid-cols-1 grid-rows-auto gap-4">
-                  <li className="underline">Individual Therapy</li>
-                  <li className="underline">Child and Adolescent Therapy</li>
-                  <li className="underline">Couples and Relational Therapy</li>
-                  <li className="underline">Nyansapo Learning Circles</li>
-                  <li className="underline">Ma'at Healing Circles</li>
-                  <li className="underline">
+                  <li
+                    onClick={navigateToIndividualTherapyPage}
+                    className="underline"
+                  >
+                    Individual Therapy
+                  </li>
+                  <li
+                    onClick={navigateToChildTherapyPage}
+                    className="underline"
+                  >
+                    Child and Adolescent Therapy
+                  </li>
+                  <li
+                    onClick={navigateToCoupleTherapyPage}
+                    className="underline"
+                  >
+                    Couples and Relational Therapy
+                  </li>
+                  <li onClick={navigateToNyansapoPage} className="underline">
+                    Nyansapo Learning Circles
+                  </li>
+                  <li onClick={navigateToMaatPage} className="underline">
+                    Ma'at Healing Circles
+                  </li>
+                  <li
+                    onClick={navigateToConsultationPage}
+                    className="underline"
+                  >
                     Consultation and Supervision Circles
                   </li>
                 </ul>
                 <ul className=" grid grid-cols-1 grid-rows-auto gap-4 p-4">
                   <li className="flex gap-2">
                     <PhoneOutlined />
-                    <div className="underline">202-423-0040</div>
+                    <div className="underline">
+                      <a href="tel:202-423-00400">202-423-0040</a>
+                    </div>
                   </li>
                   <li className="flex gap-2 whitespace-nowrap">
                     <EnvironmentOutlined />
