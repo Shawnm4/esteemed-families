@@ -191,7 +191,7 @@ export default function Footer() {
             <div className="text-center mt-14 mb-4 text-xl font-semibold">
               Denise Montgomery
             </div>
-            <div className="text-sm text-center mb-4">
+            <div className=" text-center mb-4">
               Email: <strong>Denise@esteemedfamilies.com</strong>{" "}
             </div>
             <div className="flex justify-center text-center">
