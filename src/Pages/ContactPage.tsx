@@ -65,7 +65,12 @@ export default function ContactPage() {
                 className="text-xl underline cursor-pointer"
                 style={{ fontFamily: "Inter", color: EColors.textSecondary }}
               >
-                4329 Northview Drive Bowie, Maryland 20716
+                <a
+                  href="https://maps.app.goo.gl/83W3QpujBsq9i2do9"
+                  target="_blank"
+                >
+                  4329 Northview Drive Bowie, Maryland 20716
+                </a>
               </div>
             </div>
             <div className="mb-5">
