@@ -47,7 +47,7 @@ export default function ProfileFooter() {
           style={{ fontFamily: "Inter" }}
           className=" flex  justify-center mt-16 text-xl "
         >
-          <div className="w-3/4 text-center">
+          <div className="w-full p-4 text-center">
             <div className="flex justify-center mb-8 ">
               <img
                 style={{ borderRadius: "5%" }}
