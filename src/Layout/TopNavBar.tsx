@@ -98,10 +98,11 @@ export default function TopNavBar() {
               style={{ fontFamily: "Inter" }}
               className="grid grid-cols-1 gap-8 text-xl font-semibold"
             >
-              <div>Home</div>
-              <div>About Denise</div>
-              <div>Investment</div>
-              <div>Contact</div>
+              <div onClick={navigateHome}>Home</div>
+              <div onClick={navigateToAboutDenise}>About Denise</div>
+              <div onClick={navigateToServices}>Services</div>
+              <div onClick={navigateToInvestmentPage}>Investment</div>
+              <div onClick={navigateToContact}>Contact</div>
             </div>
           </div>
         </Drawer>

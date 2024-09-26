@@ -1,77 +1,57 @@
-import { useEffect } from "react";
-
-import "./ContactPage.css";
 import { Divider } from "antd";
-import { EColors } from "../Utils/Enums/colors";
-import "leaflet/dist/leaflet.css";
+import { EColors } from "../../Utils/Enums/colors";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import Footer from "../UI/Footer";
 
-import Footer from "../Components/UI/Footer";
-import MobileContactPage from "../Components/Mobile/MobileContactPage";
-
-export default function ContactPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+export default function MobileContactPage() {
   const position: [number, number] = [38.948669791315055, -76.734660718471];
   return (
     <>
-      <div className="hidden 2xl:inline-block">
-        <section className="background-section4 mb-28  "></section>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            fontFamily: "Inter",
-          }}
-          className=""
-        >
-          <h1
+      <div className="2xl:hidden flex justify-center">
+        <div className="w-3/4">
+          <div
             style={{ fontFamily: "Lora" }}
-            className="text-5xl font-semibold mb-8 text-center"
+            className="mt-20 font-bold text-2xl text-center"
           >
             Get In Touch With Denise
-          </h1>
+          </div>
 
           <Divider></Divider>
           <div
-            style={{ color: EColors.textSecondary }}
-            className="w-full flex justify-center mb-24 text-xl"
+            style={{ fontFamily: "Inter", color: EColors.textSecondary }}
+            className=""
           >
-            <div className="w-1/2">
-              <div className="mb-6">
-                Book your free consultation today—either at my office in
-                Maryland or online.
-              </div>
-              <div className="mb-6">
-                You can also reach me by phone, email, or by filling out the
-                form below to request a callback.
-              </div>
-              <div className="mb-6">
-                If you'd like to learn more about my approach or discuss how I
-                can support you, feel free to give me a call. I’d be happy to
-                answer any questions you may have.
-              </div>
-              <div className="mb-6">
-                If I’m unable to answer right away, please leave a voicemail,
-                and I’ll return your call as soon as possible. Alternatively,
-                you can complete the contact form below and let me know the best
-                time to reach you.
-              </div>
+            <div className="mb-4">
+              Book your free consultation today—either at my office in Maryland
+              or online.
             </div>
-          </div>
-          <Divider></Divider>
-          <div className="flex justify-evenly ">
-            <div className="w-1/4">
+            <div className="mb-4">
+              You can also reach me by phone, email, or by filling out the form
+              below to request a callback.
+            </div>
+            <div className="mb-4">
+              If you'd like to learn more about my approach or discuss how I can
+              support you, feel free to give me a call. I’d be happy to answer
+              any questions you may have.
+            </div>
+            <div className="mb-4">
+              If I’m unable to answer right away, please leave a voicemail, and
+              I’ll return your call as soon as possible. Alternatively, you can
+              complete the contact form below and let me know the best time to
+              reach you
+            </div>
+
+            <Divider></Divider>
+            <div className="mb-5 ">
               <div className="mb-5">
                 <div
-                  className="text-3xl font-bold"
+                  className=" font-bold"
                   style={{ color: EColors.textSecondary }}
                 >
                   Address
                 </div>
                 <div
-                  className="text-xl underline cursor-pointer"
+                  className=" underline cursor-pointer"
                   style={{ fontFamily: "Inter", color: EColors.textSecondary }}
                 >
                   <a
@@ -84,13 +64,13 @@ export default function ContactPage() {
               </div>
               <div className="mb-5">
                 <div
-                  className="text-3xl font-bold"
+                  className=" font-bold"
                   style={{ color: EColors.textSecondary }}
                 >
                   Email
                 </div>
                 <div
-                  className="text-xl underline cursor-pointer"
+                  className=" underline cursor-pointer"
                   style={{ fontFamily: "Inter", color: EColors.textSecondary }}
                 >
                   Denise@esteemedfamilies.com
@@ -98,13 +78,13 @@ export default function ContactPage() {
               </div>
               <div>
                 <div
-                  className="text-3xl font-bold"
+                  className=" font-bold"
                   style={{ color: EColors.textSecondary }}
                 >
                   Phone
                 </div>
                 <div
-                  className="text-xl "
+                  className=" "
                   style={{ fontFamily: "Inter", color: EColors.textSecondary }}
                 >
                   202-423-0040
@@ -112,8 +92,8 @@ export default function ContactPage() {
               </div>
             </div>
             <div
-              style={{ height: "30rem", borderRadius: "5%" }}
-              className="relative w-1/2 drop-shadow-lg "
+              style={{ height: "10rem", borderRadius: "5%" }}
+              className="relative  drop-shadow-lg "
             >
               <MapContainer
                 style={{ height: "100%", width: "100%" }}
@@ -134,25 +114,24 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="2xl:hidden">
         <div
           style={{ fontFamily: "Inter" }}
-          className="flex justify-center mt-32 text-xl "
+          className=" flex  justify-center mt-16 text-xl "
         >
-          <div className="w-1/2 text-center">
+          <div className="w-3/4 text-center">
             <div className="flex justify-center mb-8 ">
               <img
+                style={{ borderRadius: "5%" }}
                 src="/denise-montgomery.jpg"
-                style={{ border: "", borderRadius: "2%" }}
-                className=" w-60 h-72 drop-shadow-xl"
+                className="h-44 my-4"
               />
             </div>
-            <div className="mb-8 text-3xl font-bold ">
+            <div className="mb-8 text-xl whitespace-nowrap font-bold ">
               Book in to see Denise
             </div>
-            <div
-              className="mb-10"
-              style={{ fontFamily: "Inter", color: EColors.textSecondary }}
-            >
+            <div className="mb-10 " style={{ fontFamily: "Inter" }}>
               You're welcome to reach out at any time to discuss your goals and
               how I can support you. Our consultation is a great opportunity to
               ask questions, explore how we might work together, and see if
@@ -161,9 +140,8 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
-      <MobileContactPage />
+      <Footer />
     </>
   );
 }
