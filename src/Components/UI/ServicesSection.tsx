@@ -25,8 +25,8 @@ export default function ServicesSection() {
   };
 
   return (
-    <>
-      <div className="my-32">
+    <div className="hidden 2xl:inline-block">
+      <div className="my-32 ">
         <Divider style={{ fontFamily: "Lora", fontSize: "2rem" }}>
           Services
         </Divider>
@@ -203,6 +203,6 @@ export default function ServicesSection() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

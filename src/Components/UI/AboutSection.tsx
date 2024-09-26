@@ -8,7 +8,7 @@ export default function AboutSection() {
     <section
       onClick={logScrollHeight}
       style={{ height: "50rem" }}
-      className="flex w-full   "
+      className=" w-full hidden 2xl:flex   "
     >
       <div className="flex w-1/2  justify-center items-center mr-10">
         {/* <img src="/Akwaaba-Adinkra.png" /> */}

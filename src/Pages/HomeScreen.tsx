@@ -4,7 +4,6 @@ import ProfileSection from "../Components/UI/ProfileSection";
 import ServicesSection from "../Components/UI/ServicesSection";
 import WelcomeSection from "../Components/UI/WelcomeSection";
 import Footer from "../Components/UI/Footer";
-import Mobile from "../Components/Mobile/Mobile";
 
 export default function HomeScreen() {
   useEffect(() => {
@@ -12,15 +11,12 @@ export default function HomeScreen() {
   }, []);
   return (
     <>
-      <div className="hidden 2xl:inline-block">
+      <div>
         <WelcomeSection />
         <AboutSection />
         <ProfileSection />
         <ServicesSection />
         <Footer />
-      </div>
-      <div className="lg:hidden ">
-        <Mobile />
       </div>
     </>
   );

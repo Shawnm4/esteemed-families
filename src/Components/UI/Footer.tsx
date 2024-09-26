@@ -43,7 +43,7 @@ export default function Footer() {
   }
 
   return (
-    <>
+    <div className="hidden 2xl:inline-block">
       <div
         style={{ backgroundColor: EColors.bgprimary, fontFamily: "Inter" }}
         className="mt-32 flex justify-center "
@@ -180,6 +180,6 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -11,7 +11,7 @@ export default function ProfileFooter() {
   return (
     <div
       style={{ fontFamily: "Inter" }}
-      className="flex justify-center mt-32 text-xl "
+      className=" hidden 2xl:flex  justify-center mt-32 text-xl "
     >
       <div className="w-1/2 text-center">
         <div className="flex justify-center mb-8 ">

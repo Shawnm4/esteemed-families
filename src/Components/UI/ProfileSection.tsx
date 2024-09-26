@@ -4,7 +4,7 @@ import "./ProfileSection.css";
 
 export default function ProfileSection() {
   return (
-    <div className="relative-container">
+    <div className="relative-container hidden 2xl:inline-block">
       <section className="background-section2">
         <div className="flex justify-center h-full items-center content">
           <div className="flex justify-center text-black ">
