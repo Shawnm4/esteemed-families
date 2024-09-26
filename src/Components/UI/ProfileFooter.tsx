@@ -58,7 +58,7 @@ export default function ProfileFooter() {
             <div className="mb-8 text-xl whitespace-nowrap font-bold ">
               Book in to see Denise
             </div>
-            <div className="mb-10 text-sm" style={{ fontFamily: "Inter" }}>
+            <div className="mb-10 " style={{ fontFamily: "Inter" }}>
               You're welcome to reach out at any time to discuss your goals and
               how I can support you. Our consultation is a great opportunity to
               ask questions, explore how we might work together, and see if

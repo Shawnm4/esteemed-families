@@ -212,7 +212,7 @@ export default function Footer() {
                     Consultation and Supervision Circles
                   </li>
                 </ul>
-                <ul className="text-sm grid grid-cols-1 grid-rows-auto gap-4 p-4">
+                <ul className=" grid grid-cols-1 grid-rows-auto gap-4 p-4">
                   <li className="flex gap-2">
                     <PhoneOutlined />
                     <div className="underline">202-423-0040</div>
