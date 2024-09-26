@@ -2,8 +2,30 @@ import { RightOutlined } from "@ant-design/icons";
 import { EColors } from "../../Utils/Enums/colors";
 import ReusableButton from "../Ant/ReusableButton";
 import ProfileFooter from "../UI/ProfileFooter";
+import { useNavigate } from "react-router-dom";
+import { ERoute } from "../../Utils/Enums/routes";
 
 export default function MobileAboutSection() {
+  const navigate = useNavigate();
+
+  const handleIndividualTherapyNavigation = () => {
+    navigate(ERoute.INDIVIDUALTHERAPY);
+  };
+  const handleChildTherapyNavigation = () => {
+    navigate(ERoute.CHILDTHERAPY);
+  };
+  const handleCouplesTherapyNavigation = () => {
+    navigate(ERoute.COUPLESTHERAPY);
+  };
+  const handleNayansapoTherapyNavigation = () => {
+    navigate(ERoute.NYANSAPOTHERAPY);
+  };
+  const handleMaatTherapyNavigation = () => {
+    navigate(ERoute.MAATTHERAPY);
+  };
+  const handleConsulationNavigation = () => {
+    navigate(ERoute.CONSULTATION);
+  };
   return (
     <div className="2xl:hidden  mt-10">
       <div className="flex justify-center">
@@ -79,7 +101,10 @@ export default function MobileAboutSection() {
           </div>
           <div className="flex justify-center mt-6">
             <div className="grid grid-cols-1 grid-rows-6 gap-4 ">
-              <div className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center">
+              <div
+                onClick={handleIndividualTherapyNavigation}
+                className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center"
+              >
                 <div className="flex items-center ml-4 mt-4  gap-2">
                   <img
                     style={{ borderRadius: "5%" }}
@@ -98,7 +123,10 @@ export default function MobileAboutSection() {
                   and behaviors.
                 </div>
               </div>
-              <div className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center">
+              <div
+                onClick={handleChildTherapyNavigation}
+                className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center"
+              >
                 <div className="flex items-center ml-4 mt-4  gap-2">
                   <img
                     style={{ borderRadius: "5%" }}
@@ -118,7 +146,10 @@ export default function MobileAboutSection() {
                   holistic,culturally sensitive approach.
                 </div>
               </div>
-              <div className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center">
+              <div
+                onClick={handleCouplesTherapyNavigation}
+                className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center"
+              >
                 <div className="flex items-center ml-4 mt-4  gap-2">
                   <img
                     style={{ borderRadius: "5%" }}
@@ -138,7 +169,10 @@ export default function MobileAboutSection() {
                   approach to help couples in relationship distress.
                 </div>
               </div>
-              <div className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center">
+              <div
+                onClick={handleNayansapoTherapyNavigation}
+                className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center"
+              >
                 <div className="flex items-center ml-4 mt-4  gap-2">
                   <img
                     style={{ borderRadius: "5%" }}
@@ -159,7 +193,10 @@ export default function MobileAboutSection() {
                   trust-based community.
                 </div>
               </div>
-              <div className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center">
+              <div
+                onClick={handleMaatTherapyNavigation}
+                className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center"
+              >
                 <div className="flex items-center ml-4 mt-4  gap-2">
                   <img
                     style={{ borderRadius: "5%" }}
@@ -179,7 +216,10 @@ export default function MobileAboutSection() {
                   connected as they pursue knowledge and personal growth.
                 </div>
               </div>
-              <div className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center">
+              <div
+                onClick={handleConsulationNavigation}
+                className="drop-shadow-xl border-2 rounded w-3/4 justify-self-center align-self-center"
+              >
                 <div className="flex items-center ml-4 mt-4  gap-2">
                   <img
                     style={{ borderRadius: "5%" }}
