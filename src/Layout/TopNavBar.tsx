@@ -69,12 +69,13 @@ export default function TopNavBar() {
           <div className=" cursor-pointer" onClick={navigateHome}>
             Home
           </div>
-          <div className="cursor-pointer" onClick={navigateToAboutDenise}>
-            About Denise
-          </div>
           <div onClick={navigateToServices} className="cursor-pointer">
             Services
           </div>
+          <div className="cursor-pointer" onClick={navigateToAboutDenise}>
+            About Denise
+          </div>
+
           <div onClick={navigateToInvestmentPage} className="cursor-pointer">
             Investment
           </div>

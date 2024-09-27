@@ -150,10 +150,7 @@ export default function Footer() {
             </ul>
             <ul className="grid grid-cols-1 gap-4 ">
               <li className="text-xl font-bold">Contact</li>
-              <li
-                onClick={navigateToHomePage}
-                className="underline cursor-pointer"
-              >
+              <li className="underline cursor-pointer">
                 <div className="flex gap-2">
                   <PhoneOutlined />
                   <div>202-423-0040</div>

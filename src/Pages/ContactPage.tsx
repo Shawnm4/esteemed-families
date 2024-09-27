@@ -6,7 +6,7 @@ import { EColors } from "../Utils/Enums/colors";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
-import Footer from "../Components/UI/Footer";
+// import Footer from "../Components/UI/Footer";
 import MobileContactPage from "../Components/Mobile/MobileContactPage";
 
 export default function ContactPage() {
@@ -161,7 +161,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
       <MobileContactPage />
     </>

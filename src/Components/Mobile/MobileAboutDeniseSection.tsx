@@ -1,13 +1,12 @@
 import { Divider } from "antd";
 import "./MobileAboutDeniseSection.css";
 import { EColors } from "../../Utils/Enums/colors";
-import ProfileFooter from "../UI/ProfileFooter";
-import Footer from "../UI/Footer";
+
 export default function MobileAboutDeniseSection() {
   return (
     <>
       <section className="denise-background-section 2xl:hidden"></section>
-      <div className="flex justify-center">
+      <div className="2xl:hidden flex justify-center ">
         <div className="w-3/4">
           <div
             style={{ fontFamily: "Lora" }}
@@ -103,8 +102,6 @@ export default function MobileAboutDeniseSection() {
           </div>
         </div>
       </div>
-      <ProfileFooter />
-      <Footer />
     </>
   );
 }
