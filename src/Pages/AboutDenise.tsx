@@ -156,6 +156,9 @@ export default function AboutDenisePage() {
         <Footer />
       </div>
       <MobileAboutDeniseSection />
+      <div className="2xl:hidden">
+        <Footer />
+      </div>
     </>
   );
 }
